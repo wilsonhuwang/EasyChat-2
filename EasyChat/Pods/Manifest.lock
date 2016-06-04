@@ -25,21 +25,12 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - HyphenateFullSDK (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
+  - HyphenateFullSDK
   - Masonry
   - MJExtension
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
-
-EXTERNAL SOURCES:
-  HyphenateFullSDK:
-    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
-
-CHECKOUT OPTIONS:
-  HyphenateFullSDK:
-    :commit: 904016687d6099c0158971380be7e8cd859fb79e
-    :git: https://github.com/easemob/hyphenate-full-cocoapods.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67

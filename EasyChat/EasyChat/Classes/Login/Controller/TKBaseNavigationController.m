@@ -26,7 +26,8 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (self.childViewControllers.count > 1) {
+    if (self.childViewControllers.count > 0) {
+        // 隐藏底部
         viewController.hidesBottomBarWhenPushed = YES;
     }
     

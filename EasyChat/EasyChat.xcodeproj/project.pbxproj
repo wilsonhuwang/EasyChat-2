@@ -13,7 +13,6 @@
 		799716661D016EDC006D6781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799716641D016EDC006D6781 /* LaunchScreen.storyboard */; };
 		799716711D016EDD006D6781 /* EasyChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799716701D016EDD006D6781 /* EasyChatTests.m */; };
 		7997167C1D016EDD006D6781 /* EasyChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997167B1D016EDD006D6781 /* EasyChatUITests.m */; };
-		7997169C1D017236006D6781 /* TKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997169B1D017236006D6781 /* TKLoginViewController.m */; };
 		7997169F1D0182A1006D6781 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7997169E1D0182A1006D6781 /* CoreMedia.framework */; };
 		799716A11D0182AE006D6781 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A01D0182AE006D6781 /* AudioToolbox.framework */; };
 		799716A31D0182BA006D6781 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A21D0182BA006D6781 /* AVFoundation.framework */; };
@@ -24,11 +23,15 @@
 		799716AD1D0182F7006D6781 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716AC1D0182F7006D6781 /* libstdc++.6.0.9.tbd */; };
 		799716AF1D018305006D6781 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716AE1D018305006D6781 /* libsqlite3.tbd */; };
 		799716B11D01830E006D6781 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716B01D01830D006D6781 /* libiconv.tbd */; };
-		79EC4DA71D02AB0700C6A8DA /* TKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */; };
-		79EC4DAA1D02AE5200C6A8DA /* TKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */; };
-		79EC4DAD1D02B0B500C6A8DA /* TKConverseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */; };
-		79EC4DB01D02B0D000C6A8DA /* TKFriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */; };
-		79EC4DB31D02B0F700C6A8DA /* TKRelasxedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */; };
+		79EC4DE31D02BE2900C6A8DA /* TKConverseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DC41D02BE2800C6A8DA /* TKConverseListController.m */; };
+		79EC4DE41D02BE2900C6A8DA /* TKAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DCA1D02BE2800C6A8DA /* TKAddFriendViewController.m */; };
+		79EC4DE51D02BE2900C6A8DA /* TKFriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DCC1D02BE2800C6A8DA /* TKFriendListController.m */; };
+		79EC4DE61D02BE2900C6A8DA /* TKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DD21D02BE2800C6A8DA /* TKBaseNavigationController.m */; };
+		79EC4DE71D02BE2900C6A8DA /* TKChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DD41D02BE2800C6A8DA /* TKChatViewController.m */; };
+		79EC4DE81D02BE2900C6A8DA /* TKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DD61D02BE2800C6A8DA /* TKLoginViewController.m */; };
+		79EC4DE91D02BE2900C6A8DA /* TKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DD81D02BE2800C6A8DA /* TKMainViewController.m */; };
+		79EC4DEA1D02BE2900C6A8DA /* TKSendMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DDC1D02BE2900C6A8DA /* TKSendMessageView.m */; };
+		79EC4DEB1D02BE2900C6A8DA /* TKRelasxedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DE01D02BE2900C6A8DA /* TKRelasxedViewController.m */; };
 		8F600A597FFBFE5FF6B92C71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5F9874D32AFC3E0FAEEC1C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +66,6 @@
 		799716771D016EDD006D6781 /* EasyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7997167B1D016EDD006D6781 /* EasyChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyChatUITests.m; sourceTree = "<group>"; };
 		7997167D1D016EDD006D6781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7997169A1D017236006D6781 /* TKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKLoginViewController.h; sourceTree = "<group>"; };
-		7997169B1D017236006D6781 /* TKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKLoginViewController.m; sourceTree = "<group>"; };
 		7997169D1D017EEC006D6781 /* EasyChat-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyChat-PrefixHeader.pch"; sourceTree = "<group>"; };
 		7997169E1D0182A1006D6781 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		799716A01D0182AE006D6781 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -76,16 +77,24 @@
 		799716AC1D0182F7006D6781 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		799716AE1D018305006D6781 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		799716B01D01830D006D6781 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		79EC4DA51D02AB0700C6A8DA /* TKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMainViewController.h; sourceTree = "<group>"; };
-		79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMainViewController.m; sourceTree = "<group>"; };
-		79EC4DA81D02AE5200C6A8DA /* TKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKBaseNavigationController.h; sourceTree = "<group>"; };
-		79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseNavigationController.m; sourceTree = "<group>"; };
-		79EC4DAB1D02B0B500C6A8DA /* TKConverseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKConverseListController.h; sourceTree = "<group>"; };
-		79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKConverseListController.m; sourceTree = "<group>"; };
-		79EC4DAE1D02B0D000C6A8DA /* TKFriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFriendListController.h; sourceTree = "<group>"; };
-		79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFriendListController.m; sourceTree = "<group>"; };
-		79EC4DB11D02B0F700C6A8DA /* TKRelasxedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRelasxedViewController.h; sourceTree = "<group>"; };
-		79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRelasxedViewController.m; sourceTree = "<group>"; };
+		79EC4DC31D02BE2800C6A8DA /* TKConverseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKConverseListController.h; sourceTree = "<group>"; };
+		79EC4DC41D02BE2800C6A8DA /* TKConverseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKConverseListController.m; sourceTree = "<group>"; };
+		79EC4DC91D02BE2800C6A8DA /* TKAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAddFriendViewController.h; sourceTree = "<group>"; };
+		79EC4DCA1D02BE2800C6A8DA /* TKAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAddFriendViewController.m; sourceTree = "<group>"; };
+		79EC4DCB1D02BE2800C6A8DA /* TKFriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFriendListController.h; sourceTree = "<group>"; };
+		79EC4DCC1D02BE2800C6A8DA /* TKFriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFriendListController.m; sourceTree = "<group>"; };
+		79EC4DD11D02BE2800C6A8DA /* TKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKBaseNavigationController.h; sourceTree = "<group>"; };
+		79EC4DD21D02BE2800C6A8DA /* TKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseNavigationController.m; sourceTree = "<group>"; };
+		79EC4DD31D02BE2800C6A8DA /* TKChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatViewController.h; sourceTree = "<group>"; };
+		79EC4DD41D02BE2800C6A8DA /* TKChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatViewController.m; sourceTree = "<group>"; };
+		79EC4DD51D02BE2800C6A8DA /* TKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKLoginViewController.h; sourceTree = "<group>"; };
+		79EC4DD61D02BE2800C6A8DA /* TKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKLoginViewController.m; sourceTree = "<group>"; };
+		79EC4DD71D02BE2800C6A8DA /* TKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMainViewController.h; sourceTree = "<group>"; };
+		79EC4DD81D02BE2800C6A8DA /* TKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMainViewController.m; sourceTree = "<group>"; };
+		79EC4DDB1D02BE2800C6A8DA /* TKSendMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSendMessageView.h; sourceTree = "<group>"; };
+		79EC4DDC1D02BE2900C6A8DA /* TKSendMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSendMessageView.m; sourceTree = "<group>"; };
+		79EC4DDF1D02BE2900C6A8DA /* TKRelasxedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRelasxedViewController.h; sourceTree = "<group>"; };
+		79EC4DE01D02BE2900C6A8DA /* TKRelasxedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRelasxedViewController.m; sourceTree = "<group>"; };
 		7F5F9874D32AFC3E0FAEEC1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A241AD0583139086AB086538 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F985E31D54CE53230A655AF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,7 +181,7 @@
 			children = (
 				799716591D016EDC006D6781 /* AppDelegate.h */,
 				7997165A1D016EDC006D6781 /* AppDelegate.m */,
-				799716891D0171EF006D6781 /* Classes */,
+				79EC4DC01D02BE2800C6A8DA /* Classes */,
 				799716561D016EDC006D6781 /* Supporting Files */,
 			);
 			path = EasyChat;
@@ -208,147 +217,153 @@
 			path = EasyChatUITests;
 			sourceTree = "<group>";
 		};
-		799716891D0171EF006D6781 /* Classes */ = {
+		79EC4DC01D02BE2800C6A8DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7997168A1D0171EF006D6781 /* ConverseList */,
-				7997168E1D0171EF006D6781 /* FriendList */,
-				799716921D0171EF006D6781 /* Login */,
-				799716961D0171EF006D6781 /* Relasxed */,
+				79EC4DC11D02BE2800C6A8DA /* ConverseList */,
+				79EC4DC71D02BE2800C6A8DA /* FriendList */,
+				79EC4DCF1D02BE2800C6A8DA /* Login */,
+				79EC4DDD1D02BE2900C6A8DA /* Relasxed */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		7997168A1D0171EF006D6781 /* ConverseList */ = {
+		79EC4DC11D02BE2800C6A8DA /* ConverseList */ = {
 			isa = PBXGroup;
 			children = (
-				7997168B1D0171EF006D6781 /* Controller */,
-				7997168C1D0171EF006D6781 /* Model */,
-				7997168D1D0171EF006D6781 /* View */,
+				79EC4DC21D02BE2800C6A8DA /* Controller */,
+				79EC4DC51D02BE2800C6A8DA /* Model */,
+				79EC4DC61D02BE2800C6A8DA /* View */,
 			);
 			path = ConverseList;
 			sourceTree = "<group>";
 		};
-		7997168B1D0171EF006D6781 /* Controller */ = {
+		79EC4DC21D02BE2800C6A8DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				79EC4DAB1D02B0B500C6A8DA /* TKConverseListController.h */,
-				79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */,
+				79EC4DC31D02BE2800C6A8DA /* TKConverseListController.h */,
+				79EC4DC41D02BE2800C6A8DA /* TKConverseListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		7997168C1D0171EF006D6781 /* Model */ = {
+		79EC4DC51D02BE2800C6A8DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7997168D1D0171EF006D6781 /* View */ = {
+		79EC4DC61D02BE2800C6A8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		7997168E1D0171EF006D6781 /* FriendList */ = {
+		79EC4DC71D02BE2800C6A8DA /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
-				7997168F1D0171EF006D6781 /* Controller */,
-				799716901D0171EF006D6781 /* Model */,
-				799716911D0171EF006D6781 /* View */,
+				79EC4DC81D02BE2800C6A8DA /* Controller */,
+				79EC4DCD1D02BE2800C6A8DA /* Model */,
+				79EC4DCE1D02BE2800C6A8DA /* View */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
 		};
-		7997168F1D0171EF006D6781 /* Controller */ = {
+		79EC4DC81D02BE2800C6A8DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				79EC4DAE1D02B0D000C6A8DA /* TKFriendListController.h */,
-				79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */,
+				79EC4DC91D02BE2800C6A8DA /* TKAddFriendViewController.h */,
+				79EC4DCA1D02BE2800C6A8DA /* TKAddFriendViewController.m */,
+				79EC4DCB1D02BE2800C6A8DA /* TKFriendListController.h */,
+				79EC4DCC1D02BE2800C6A8DA /* TKFriendListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		799716901D0171EF006D6781 /* Model */ = {
+		79EC4DCD1D02BE2800C6A8DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		799716911D0171EF006D6781 /* View */ = {
+		79EC4DCE1D02BE2800C6A8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		799716921D0171EF006D6781 /* Login */ = {
+		79EC4DCF1D02BE2800C6A8DA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				799716931D0171EF006D6781 /* Controller */,
-				799716941D0171EF006D6781 /* Model */,
-				799716951D0171EF006D6781 /* View */,
+				79EC4DD01D02BE2800C6A8DA /* Controller */,
+				79EC4DD91D02BE2800C6A8DA /* Model */,
+				79EC4DDA1D02BE2800C6A8DA /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		799716931D0171EF006D6781 /* Controller */ = {
+		79EC4DD01D02BE2800C6A8DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7997169A1D017236006D6781 /* TKLoginViewController.h */,
-				7997169B1D017236006D6781 /* TKLoginViewController.m */,
-				79EC4DA51D02AB0700C6A8DA /* TKMainViewController.h */,
-				79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */,
-				79EC4DA81D02AE5200C6A8DA /* TKBaseNavigationController.h */,
-				79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */,
+				79EC4DD11D02BE2800C6A8DA /* TKBaseNavigationController.h */,
+				79EC4DD21D02BE2800C6A8DA /* TKBaseNavigationController.m */,
+				79EC4DD31D02BE2800C6A8DA /* TKChatViewController.h */,
+				79EC4DD41D02BE2800C6A8DA /* TKChatViewController.m */,
+				79EC4DD51D02BE2800C6A8DA /* TKLoginViewController.h */,
+				79EC4DD61D02BE2800C6A8DA /* TKLoginViewController.m */,
+				79EC4DD71D02BE2800C6A8DA /* TKMainViewController.h */,
+				79EC4DD81D02BE2800C6A8DA /* TKMainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		799716941D0171EF006D6781 /* Model */ = {
+		79EC4DD91D02BE2800C6A8DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		799716951D0171EF006D6781 /* View */ = {
+		79EC4DDA1D02BE2800C6A8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				79EC4DDB1D02BE2800C6A8DA /* TKSendMessageView.h */,
+				79EC4DDC1D02BE2900C6A8DA /* TKSendMessageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		799716961D0171EF006D6781 /* Relasxed */ = {
+		79EC4DDD1D02BE2900C6A8DA /* Relasxed */ = {
 			isa = PBXGroup;
 			children = (
-				799716971D0171EF006D6781 /* Controller */,
-				799716981D0171EF006D6781 /* Model */,
-				799716991D0171EF006D6781 /* View */,
+				79EC4DDE1D02BE2900C6A8DA /* Controller */,
+				79EC4DE11D02BE2900C6A8DA /* Model */,
+				79EC4DE21D02BE2900C6A8DA /* View */,
 			);
 			path = Relasxed;
 			sourceTree = "<group>";
 		};
-		799716971D0171EF006D6781 /* Controller */ = {
+		79EC4DDE1D02BE2900C6A8DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				79EC4DB11D02B0F700C6A8DA /* TKRelasxedViewController.h */,
-				79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */,
+				79EC4DDF1D02BE2900C6A8DA /* TKRelasxedViewController.h */,
+				79EC4DE01D02BE2900C6A8DA /* TKRelasxedViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		799716981D0171EF006D6781 /* Model */ = {
+		79EC4DE11D02BE2900C6A8DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		799716991D0171EF006D6781 /* View */ = {
+		79EC4DE21D02BE2900C6A8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -548,14 +563,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79EC4DAA1D02AE5200C6A8DA /* TKBaseNavigationController.m in Sources */,
-				79EC4DA71D02AB0700C6A8DA /* TKMainViewController.m in Sources */,
-				7997169C1D017236006D6781 /* TKLoginViewController.m in Sources */,
-				79EC4DB31D02B0F700C6A8DA /* TKRelasxedViewController.m in Sources */,
-				79EC4DAD1D02B0B500C6A8DA /* TKConverseListController.m in Sources */,
+				79EC4DE31D02BE2900C6A8DA /* TKConverseListController.m in Sources */,
+				79EC4DE81D02BE2900C6A8DA /* TKLoginViewController.m in Sources */,
+				79EC4DE51D02BE2900C6A8DA /* TKFriendListController.m in Sources */,
+				79EC4DE41D02BE2900C6A8DA /* TKAddFriendViewController.m in Sources */,
 				7997165B1D016EDC006D6781 /* AppDelegate.m in Sources */,
+				79EC4DEA1D02BE2900C6A8DA /* TKSendMessageView.m in Sources */,
+				79EC4DE91D02BE2900C6A8DA /* TKMainViewController.m in Sources */,
 				799716581D016EDC006D6781 /* main.m in Sources */,
-				79EC4DB01D02B0D000C6A8DA /* TKFriendListController.m in Sources */,
+				79EC4DEB1D02BE2900C6A8DA /* TKRelasxedViewController.m in Sources */,
+				79EC4DE61D02BE2900C6A8DA /* TKBaseNavigationController.m in Sources */,
+				79EC4DE71D02BE2900C6A8DA /* TKChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
