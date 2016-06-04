@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		799716581D016EDC006D6781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799716571D016EDC006D6781 /* main.m */; };
+		7997165B1D016EDC006D6781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997165A1D016EDC006D6781 /* AppDelegate.m */; };
+		799716631D016EDC006D6781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799716621D016EDC006D6781 /* Assets.xcassets */; };
+		799716661D016EDC006D6781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799716641D016EDC006D6781 /* LaunchScreen.storyboard */; };
+		799716711D016EDD006D6781 /* EasyChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799716701D016EDD006D6781 /* EasyChatTests.m */; };
+		7997167C1D016EDD006D6781 /* EasyChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997167B1D016EDD006D6781 /* EasyChatUITests.m */; };
+		7997169C1D017236006D6781 /* TKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997169B1D017236006D6781 /* TKLoginViewController.m */; };
+		7997169F1D0182A1006D6781 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7997169E1D0182A1006D6781 /* CoreMedia.framework */; };
+		799716A11D0182AE006D6781 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A01D0182AE006D6781 /* AudioToolbox.framework */; };
+		799716A31D0182BA006D6781 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A21D0182BA006D6781 /* AVFoundation.framework */; };
+		799716A51D0182C6006D6781 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A41D0182C6006D6781 /* MobileCoreServices.framework */; };
+		799716A71D0182D0006D6781 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A61D0182D0006D6781 /* ImageIO.framework */; };
+		799716A91D0182E3006D6781 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716A81D0182E3006D6781 /* libc++.tbd */; };
+		799716AB1D0182EC006D6781 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716AA1D0182EC006D6781 /* libz.tbd */; };
+		799716AD1D0182F7006D6781 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716AC1D0182F7006D6781 /* libstdc++.6.0.9.tbd */; };
+		799716AF1D018305006D6781 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716AE1D018305006D6781 /* libsqlite3.tbd */; };
+		799716B11D01830E006D6781 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 799716B01D01830D006D6781 /* libiconv.tbd */; };
+		79EC4DA71D02AB0700C6A8DA /* TKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */; };
+		79EC4DAA1D02AE5200C6A8DA /* TKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */; };
+		79EC4DAD1D02B0B500C6A8DA /* TKConverseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */; };
+		79EC4DB01D02B0D000C6A8DA /* TKFriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */; };
+		79EC4DB31D02B0F700C6A8DA /* TKRelasxedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */; };
+		8F600A597FFBFE5FF6B92C71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5F9874D32AFC3E0FAEEC1C /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7997166D1D016EDD006D6781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7997164B1D016EDC006D6781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799716521D016EDC006D6781;
+			remoteInfo = EasyChat;
+		};
+		799716781D016EDD006D6781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7997164B1D016EDC006D6781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799716521D016EDC006D6781;
+			remoteInfo = EasyChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		799716531D016EDC006D6781 /* EasyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799716571D016EDC006D6781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		799716591D016EDC006D6781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7997165A1D016EDC006D6781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		799716621D016EDC006D6781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799716651D016EDC006D6781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		799716671D016EDC006D6781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7997166C1D016EDD006D6781 /* EasyChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799716701D016EDD006D6781 /* EasyChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyChatTests.m; sourceTree = "<group>"; };
+		799716721D016EDD006D6781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799716771D016EDD006D6781 /* EasyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7997167B1D016EDD006D6781 /* EasyChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyChatUITests.m; sourceTree = "<group>"; };
+		7997167D1D016EDD006D6781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7997169A1D017236006D6781 /* TKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKLoginViewController.h; sourceTree = "<group>"; };
+		7997169B1D017236006D6781 /* TKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKLoginViewController.m; sourceTree = "<group>"; };
+		7997169D1D017EEC006D6781 /* EasyChat-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyChat-PrefixHeader.pch"; sourceTree = "<group>"; };
+		7997169E1D0182A1006D6781 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		799716A01D0182AE006D6781 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		799716A21D0182BA006D6781 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		799716A41D0182C6006D6781 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		799716A61D0182D0006D6781 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		799716A81D0182E3006D6781 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		799716AA1D0182EC006D6781 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		799716AC1D0182F7006D6781 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		799716AE1D018305006D6781 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		799716B01D01830D006D6781 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		79EC4DA51D02AB0700C6A8DA /* TKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMainViewController.h; sourceTree = "<group>"; };
+		79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMainViewController.m; sourceTree = "<group>"; };
+		79EC4DA81D02AE5200C6A8DA /* TKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKBaseNavigationController.h; sourceTree = "<group>"; };
+		79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseNavigationController.m; sourceTree = "<group>"; };
+		79EC4DAB1D02B0B500C6A8DA /* TKConverseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKConverseListController.h; sourceTree = "<group>"; };
+		79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKConverseListController.m; sourceTree = "<group>"; };
+		79EC4DAE1D02B0D000C6A8DA /* TKFriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKFriendListController.h; sourceTree = "<group>"; };
+		79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKFriendListController.m; sourceTree = "<group>"; };
+		79EC4DB11D02B0F700C6A8DA /* TKRelasxedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRelasxedViewController.h; sourceTree = "<group>"; };
+		79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRelasxedViewController.m; sourceTree = "<group>"; };
+		7F5F9874D32AFC3E0FAEEC1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A241AD0583139086AB086538 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F985E31D54CE53230A655AF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		799716501D016EDC006D6781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799716B11D01830E006D6781 /* libiconv.tbd in Frameworks */,
+				799716AF1D018305006D6781 /* libsqlite3.tbd in Frameworks */,
+				799716AD1D0182F7006D6781 /* libstdc++.6.0.9.tbd in Frameworks */,
+				799716AB1D0182EC006D6781 /* libz.tbd in Frameworks */,
+				799716A91D0182E3006D6781 /* libc++.tbd in Frameworks */,
+				799716A71D0182D0006D6781 /* ImageIO.framework in Frameworks */,
+				799716A51D0182C6006D6781 /* MobileCoreServices.framework in Frameworks */,
+				799716A31D0182BA006D6781 /* AVFoundation.framework in Frameworks */,
+				799716A11D0182AE006D6781 /* AudioToolbox.framework in Frameworks */,
+				7997169F1D0182A1006D6781 /* CoreMedia.framework in Frameworks */,
+				8F600A597FFBFE5FF6B92C71 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799716691D016EDD006D6781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799716741D016EDD006D6781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E51EF64B37C17D1482F5BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799716B01D01830D006D6781 /* libiconv.tbd */,
+				799716AE1D018305006D6781 /* libsqlite3.tbd */,
+				799716AC1D0182F7006D6781 /* libstdc++.6.0.9.tbd */,
+				799716AA1D0182EC006D6781 /* libz.tbd */,
+				799716A81D0182E3006D6781 /* libc++.tbd */,
+				799716A61D0182D0006D6781 /* ImageIO.framework */,
+				799716A41D0182C6006D6781 /* MobileCoreServices.framework */,
+				799716A21D0182BA006D6781 /* AVFoundation.framework */,
+				799716A01D0182AE006D6781 /* AudioToolbox.framework */,
+				7997169E1D0182A1006D6781 /* CoreMedia.framework */,
+				7F5F9874D32AFC3E0FAEEC1C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7997164A1D016EDC006D6781 = {
+			isa = PBXGroup;
+			children = (
+				799716551D016EDC006D6781 /* EasyChat */,
+				7997166F1D016EDD006D6781 /* EasyChatTests */,
+				7997167A1D016EDD006D6781 /* EasyChatUITests */,
+				799716541D016EDC006D6781 /* Products */,
+				87DA31A0D0DB01BF738266E0 /* Pods */,
+				3E51EF64B37C17D1482F5BBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		799716541D016EDC006D6781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799716531D016EDC006D6781 /* EasyChat.app */,
+				7997166C1D016EDD006D6781 /* EasyChatTests.xctest */,
+				799716771D016EDD006D6781 /* EasyChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		799716551D016EDC006D6781 /* EasyChat */ = {
+			isa = PBXGroup;
+			children = (
+				799716591D016EDC006D6781 /* AppDelegate.h */,
+				7997165A1D016EDC006D6781 /* AppDelegate.m */,
+				799716891D0171EF006D6781 /* Classes */,
+				799716561D016EDC006D6781 /* Supporting Files */,
+			);
+			path = EasyChat;
+			sourceTree = "<group>";
+		};
+		799716561D016EDC006D6781 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				799716621D016EDC006D6781 /* Assets.xcassets */,
+				799716641D016EDC006D6781 /* LaunchScreen.storyboard */,
+				799716671D016EDC006D6781 /* Info.plist */,
+				799716571D016EDC006D6781 /* main.m */,
+				7997169D1D017EEC006D6781 /* EasyChat-PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7997166F1D016EDD006D6781 /* EasyChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				799716701D016EDD006D6781 /* EasyChatTests.m */,
+				799716721D016EDD006D6781 /* Info.plist */,
+			);
+			path = EasyChatTests;
+			sourceTree = "<group>";
+		};
+		7997167A1D016EDD006D6781 /* EasyChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7997167B1D016EDD006D6781 /* EasyChatUITests.m */,
+				7997167D1D016EDD006D6781 /* Info.plist */,
+			);
+			path = EasyChatUITests;
+			sourceTree = "<group>";
+		};
+		799716891D0171EF006D6781 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7997168A1D0171EF006D6781 /* ConverseList */,
+				7997168E1D0171EF006D6781 /* FriendList */,
+				799716921D0171EF006D6781 /* Login */,
+				799716961D0171EF006D6781 /* Relasxed */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7997168A1D0171EF006D6781 /* ConverseList */ = {
+			isa = PBXGroup;
+			children = (
+				7997168B1D0171EF006D6781 /* Controller */,
+				7997168C1D0171EF006D6781 /* Model */,
+				7997168D1D0171EF006D6781 /* View */,
+			);
+			path = ConverseList;
+			sourceTree = "<group>";
+		};
+		7997168B1D0171EF006D6781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79EC4DAB1D02B0B500C6A8DA /* TKConverseListController.h */,
+				79EC4DAC1D02B0B500C6A8DA /* TKConverseListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7997168C1D0171EF006D6781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7997168D1D0171EF006D6781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7997168E1D0171EF006D6781 /* FriendList */ = {
+			isa = PBXGroup;
+			children = (
+				7997168F1D0171EF006D6781 /* Controller */,
+				799716901D0171EF006D6781 /* Model */,
+				799716911D0171EF006D6781 /* View */,
+			);
+			path = FriendList;
+			sourceTree = "<group>";
+		};
+		7997168F1D0171EF006D6781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79EC4DAE1D02B0D000C6A8DA /* TKFriendListController.h */,
+				79EC4DAF1D02B0D000C6A8DA /* TKFriendListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		799716901D0171EF006D6781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799716911D0171EF006D6781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		799716921D0171EF006D6781 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				799716931D0171EF006D6781 /* Controller */,
+				799716941D0171EF006D6781 /* Model */,
+				799716951D0171EF006D6781 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		799716931D0171EF006D6781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7997169A1D017236006D6781 /* TKLoginViewController.h */,
+				7997169B1D017236006D6781 /* TKLoginViewController.m */,
+				79EC4DA51D02AB0700C6A8DA /* TKMainViewController.h */,
+				79EC4DA61D02AB0700C6A8DA /* TKMainViewController.m */,
+				79EC4DA81D02AE5200C6A8DA /* TKBaseNavigationController.h */,
+				79EC4DA91D02AE5200C6A8DA /* TKBaseNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		799716941D0171EF006D6781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799716951D0171EF006D6781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		799716961D0171EF006D6781 /* Relasxed */ = {
+			isa = PBXGroup;
+			children = (
+				799716971D0171EF006D6781 /* Controller */,
+				799716981D0171EF006D6781 /* Model */,
+				799716991D0171EF006D6781 /* View */,
+			);
+			path = Relasxed;
+			sourceTree = "<group>";
+		};
+		799716971D0171EF006D6781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79EC4DB11D02B0F700C6A8DA /* TKRelasxedViewController.h */,
+				79EC4DB21D02B0F700C6A8DA /* TKRelasxedViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		799716981D0171EF006D6781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799716991D0171EF006D6781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87DA31A0D0DB01BF738266E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F985E31D54CE53230A655AF2 /* Pods.debug.xcconfig */,
+				A241AD0583139086AB086538 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799716521D016EDC006D6781 /* EasyChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799716801D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChat" */;
+			buildPhases = (
+				C8DE1C9A631105F79D5D62BF /* Check Pods Manifest.lock */,
+				7997164F1D016EDC006D6781 /* Sources */,
+				799716501D016EDC006D6781 /* Frameworks */,
+				799716511D016EDC006D6781 /* Resources */,
+				8F328A0C7E55A8A16BC412FA /* Embed Pods Frameworks */,
+				B45407CB371736E85F9C321E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyChat;
+			productName = EasyChat;
+			productReference = 799716531D016EDC006D6781 /* EasyChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7997166B1D016EDD006D6781 /* EasyChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799716831D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChatTests" */;
+			buildPhases = (
+				799716681D016EDD006D6781 /* Sources */,
+				799716691D016EDD006D6781 /* Frameworks */,
+				7997166A1D016EDD006D6781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7997166E1D016EDD006D6781 /* PBXTargetDependency */,
+			);
+			name = EasyChatTests;
+			productName = EasyChatTests;
+			productReference = 7997166C1D016EDD006D6781 /* EasyChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		799716761D016EDD006D6781 /* EasyChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799716861D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChatUITests" */;
+			buildPhases = (
+				799716731D016EDD006D6781 /* Sources */,
+				799716741D016EDD006D6781 /* Frameworks */,
+				799716751D016EDD006D6781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				799716791D016EDD006D6781 /* PBXTargetDependency */,
+			);
+			name = EasyChatUITests;
+			productName = EasyChatUITests;
+			productReference = 799716771D016EDD006D6781 /* EasyChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7997164B1D016EDC006D6781 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TK;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wanghu;
+				TargetAttributes = {
+					799716521D016EDC006D6781 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7G8827ZPKN;
+					};
+					7997166B1D016EDD006D6781 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7G8827ZPKN;
+						TestTargetID = 799716521D016EDC006D6781;
+					};
+					799716761D016EDD006D6781 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7G8827ZPKN;
+						TestTargetID = 799716521D016EDC006D6781;
+					};
+				};
+			};
+			buildConfigurationList = 7997164E1D016EDC006D6781 /* Build configuration list for PBXProject "EasyChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7997164A1D016EDC006D6781;
+			productRefGroup = 799716541D016EDC006D6781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799716521D016EDC006D6781 /* EasyChat */,
+				7997166B1D016EDD006D6781 /* EasyChatTests */,
+				799716761D016EDD006D6781 /* EasyChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		799716511D016EDC006D6781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799716661D016EDC006D6781 /* LaunchScreen.storyboard in Resources */,
+				799716631D016EDC006D6781 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7997166A1D016EDD006D6781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799716751D016EDD006D6781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F328A0C7E55A8A16BC412FA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45407CB371736E85F9C321E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8DE1C9A631105F79D5D62BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7997164F1D016EDC006D6781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EC4DAA1D02AE5200C6A8DA /* TKBaseNavigationController.m in Sources */,
+				79EC4DA71D02AB0700C6A8DA /* TKMainViewController.m in Sources */,
+				7997169C1D017236006D6781 /* TKLoginViewController.m in Sources */,
+				79EC4DB31D02B0F700C6A8DA /* TKRelasxedViewController.m in Sources */,
+				79EC4DAD1D02B0B500C6A8DA /* TKConverseListController.m in Sources */,
+				7997165B1D016EDC006D6781 /* AppDelegate.m in Sources */,
+				799716581D016EDC006D6781 /* main.m in Sources */,
+				79EC4DB01D02B0D000C6A8DA /* TKFriendListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799716681D016EDD006D6781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799716711D016EDD006D6781 /* EasyChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799716731D016EDD006D6781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7997167C1D016EDD006D6781 /* EasyChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7997166E1D016EDD006D6781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799716521D016EDC006D6781 /* EasyChat */;
+			targetProxy = 7997166D1D016EDD006D6781 /* PBXContainerItemProxy */;
+		};
+		799716791D016EDD006D6781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799716521D016EDC006D6781 /* EasyChat */;
+			targetProxy = 799716781D016EDD006D6781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		799716641D016EDC006D6781 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799716651D016EDC006D6781 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7997167E1D016EDD006D6781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyChat/EasyChat-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7997167F1D016EDD006D6781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyChat/EasyChat-PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		799716811D016EDD006D6781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F985E31D54CE53230A655AF2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = EasyChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		799716821D016EDD006D6781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A241AD0583139086AB086538 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = EasyChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		799716841D016EDD006D6781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyChat.app/EasyChat";
+			};
+			name = Debug;
+		};
+		799716851D016EDD006D6781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyChat.app/EasyChat";
+			};
+			name = Release;
+		};
+		799716871D016EDD006D6781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyChat;
+			};
+			name = Debug;
+		};
+		799716881D016EDD006D6781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1341415515.www.EasyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7997164E1D016EDC006D6781 /* Build configuration list for PBXProject "EasyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7997167E1D016EDD006D6781 /* Debug */,
+				7997167F1D016EDD006D6781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799716801D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799716811D016EDD006D6781 /* Debug */,
+				799716821D016EDD006D6781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799716831D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799716841D016EDD006D6781 /* Debug */,
+				799716851D016EDD006D6781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799716861D016EDD006D6781 /* Build configuration list for PBXNativeTarget "EasyChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799716871D016EDD006D6781 /* Debug */,
+				799716881D016EDD006D6781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7997164B1D016EDC006D6781 /* Project object */;
+}

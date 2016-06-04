@@ -1,0 +1,21 @@
+//
+//  EasyChat-PrefixHeader.pch
+//  EasyChat
+//
+//  Created by wanghu on 16/6/3.
+//  Copyright © 2016年 wanghu. All rights reserved.
+//
+
+#ifndef EasyChat_PrefixHeader_pch
+#define EasyChat_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+#import "SVProgressHUD.h"
+
+// 全局背景色
+#define TKGlobalBgColor [UIColor colorWithRed:228/255.0 green:228/255.0 blue:228/255.0 alpha:1.0]
+
+#endif /* EasyChat_PrefixHeader_pch */
