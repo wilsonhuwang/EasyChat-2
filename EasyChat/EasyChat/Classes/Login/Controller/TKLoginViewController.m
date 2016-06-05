@@ -147,14 +147,17 @@ static NSString * const PwdKey = @"pwdKey";
 
 // 登录账号
 - (void)loginBtnClick
-{    EMError *error = [[EMClient sharedClient] loginWithUsername:self.nameField.text password:self.pwdField.text];
+{
+//    [SVProgressHUD showWithStatus:@"正在拼命登录中...."];
+//    [SVProgressHUD show];
+    EMError *error = [[EMClient sharedClient] loginWithUsername:self.nameField.text password:self.pwdField.text];
     if (!error) {
         //        [[EMClient sharedClient].options setIsAutoLogin:YES];
         [UIApplication sharedApplication].keyWindow.rootViewController = [[TKMainViewController alloc] init];
         // 存储账号密码
         [[NSUserDefaults standardUserDefaults] setObject:self.nameField.text forKey:NameKey];
         [[NSUserDefaults standardUserDefaults] setObject:self.pwdField.text forKey:PwdKey];
-        
+        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
         
     } else {
         [SVProgressHUD showErrorWithStatus:@"登录失败"];

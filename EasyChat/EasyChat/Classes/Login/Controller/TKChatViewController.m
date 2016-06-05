@@ -12,7 +12,7 @@
 #import "TKSendCell.h"
 #import "EMSDK.h"
 
-@interface TKChatViewController () <UITableViewDelegate, UITableViewDataSource, TKSendMessageViewDelegate, EMChatManagerDelegate>
+@interface TKChatViewController () <UITableViewDelegate, UITableViewDataSource, TKSendMessageViewDelegate, EMChatManagerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 // 消息输入栏
 @property (nonatomic, weak) TKSendMessageView *sendView;
 // 对话显示栏
@@ -177,6 +177,7 @@ static NSString * const sendId = @"sendId";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.cellHeightTool.message = self.chatNews[indexPath.row];
+//    NSLog(@"%f", self.cellHeightTool.cellHeight);
     return self.cellHeightTool.cellHeight;
 }
 
@@ -188,6 +189,7 @@ static NSString * const sendId = @"sendId";
 }
 
 #pragma mark - TKSendMessageViewDelegate
+#pragma mark - 发送文字消息
 - (void)sendMessageView:(TKSendMessageView *)sendMessageView allWord:(UITextView *)textView
 {
     // 根据输入的文字改变sendView的高度
@@ -226,22 +228,75 @@ static NSString * const sendId = @"sendId";
 - (void)sendMessage:(NSString *)messageText
 {
     EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:messageText];
-    NSString *from = [[EMClient sharedClient] currentUsername];
+    [self sendMessageWithBody:body];
+}
+
+#pragma mark - 发送图片消息
+// 选取相册中的图片
+- (void)sendMessageViewDidSelectImage:(TKSendMessageView *)sendMessageView
+{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    imagePicker.delegate = self;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    // 选中的图片
+    UIImage *selectImage = info[UIImagePickerControllerOriginalImage];
+    // 选中的图片
+    [self sendImageMessage:selectImage];
+    // 选中的图片
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)sendImageMessage:(UIImage *)image
+{
+    UIImage *thumImage = [self getThumbnailImage:image];
+    NSData *originalData = UIImagePNGRepresentation(image);
+    NSData *thumbnailData = UIImagePNGRepresentation(thumImage);
+    // 消息体
+    EMImageMessageBody *body = [[EMImageMessageBody alloc] initWithData:originalData thumbnailData:thumbnailData];
+    [self sendMessageWithBody:body];
+}
+
+// 根据原图生产缩略图
+- (UIImage *)getThumbnailImage:(UIImage *)image
+{
+    CGSize size = image.size;
+    CGSize thumbSize;
+    if (size.width > size.height) {
+        thumbSize = CGSizeMake(170, 170 * size.height/size.width);
+    } else {
+        thumbSize = CGSizeMake(170 * size.width/size.height, 170);
+    }
     
+    UIGraphicsBeginImageContext(thumbSize);
+    [image drawInRect:(CGRect){0, 0, thumbSize.width, thumbSize.height}];
+    UIImage *thumbnailImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return thumbnailImage;
+}
+
+// 发送聊天信息
+- (void)sendMessageWithBody:(EMMessageBody *)body
+{
+    NSString *from = [[EMClient sharedClient] currentUsername];
     //生成Message
     EMMessage *message = [[EMMessage alloc] initWithConversationID:self.currentConversation.conversationId from:from to:self.buddy body:body ext:nil];
-    message.chatType = EMChatTypeChat;// 设置为单聊消息
-    //message.chatType = EMChatTypeGroupChat;// 设置为群聊消息
-    //message.chatType = EMChatTypeChatRoom;// 设置为聊天室消息
+    message.chatType = EMChatTypeChat;
     [self.chatNews addObject:message];
     [self.chatNewsView reloadData];
-    [self scrollToBottom];
     
+    // 发送消息
     [[EMClient sharedClient].chatManager asyncSendMessage:message progress:^(int progress) {
         
     } completion:^(EMMessage *message, EMError *error) {
         
     }];
+    
+    [self scrollToBottom];
 }
 
 /*!

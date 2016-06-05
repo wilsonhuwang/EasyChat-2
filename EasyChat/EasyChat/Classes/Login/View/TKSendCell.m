@@ -44,6 +44,7 @@
     UIButton *messageBtn = [[UIButton alloc] init];
     messageBtn.titleLabel.numberOfLines = 0;
     messageBtn.titleEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
+    messageBtn.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 16);
     //    messageBtn.titleLabel.preferredMaxLayoutWidth = 180.0;
     
     [messageBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
@@ -69,22 +70,41 @@
     switch (msgBody.type) {
         case EMMessageBodyTypeText:
         {
-            // 收到的文字消息
+            // 文字消息
             EMTextMessageBody *textBody = (EMTextMessageBody *)msgBody;
-            [self.messageBtn setTitle:textBody.text forState:UIControlStateNormal];
             
+            [self.messageBtn setTitle:textBody.text forState:UIControlStateNormal];
+            [self.messageBtn setImage:nil forState:UIControlStateNormal];
+
             [self.messageBtn layoutIfNeeded];
-            //            NSLog(@"%@", NSStringFromCGRect(self.messageBtn.titleLabel.frame));
+            
             [self.messageBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+                
                 make.height.mas_equalTo(_messageBtn.titleLabel.frame.size.height+20);
             }];
+            
             [self.messageBtn layoutIfNeeded];
         }
             break;
+            
         case EMMessageBodyTypeImage:
         {
+            // 图片消息
+            EMImageMessageBody *imageBody = (EMImageMessageBody *)msgBody;
+            UIImage *image = [UIImage imageWithContentsOfFile:imageBody.thumbnailLocalPath];
+            if (image) {
+                [self.messageBtn mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.height.mas_equalTo(image.size.height);
+                }];
+                
+                // 避免cell循环引用残留text
+                [self.messageBtn setTitle:nil forState:UIControlStateNormal];
+                [self.messageBtn setImage:image forState:UIControlStateNormal];
+                [self.messageBtn layoutIfNeeded];
+            }
         }
             break;
+            
         case EMMessageBodyTypeLocation:
             break;
         case EMMessageBodyTypeVoice:
@@ -101,12 +121,9 @@
 - (CGFloat)cellHeight
 {
     CGFloat iconMaxY = CGRectGetMaxY(self.iconImageView.frame);
-    CGFloat messageY = CGRectGetMaxY(self.messageBtn.frame);
-    if (iconMaxY > messageY) {
-        return iconMaxY + 10;
-    } else {
-        return messageY + 10;
-    }
+    CGFloat messageMaxY = CGRectGetMaxY(self.messageBtn.frame);
+   
+    return MAX(iconMaxY, messageMaxY) + 10;
 }
 
 @end
