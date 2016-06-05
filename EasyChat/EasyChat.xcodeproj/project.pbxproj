@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792775E81D03136A00B360F7 /* TKSendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 792775E71D03136A00B360F7 /* TKSendCell.m */; };
+		792775EB1D03138100B360F7 /* TKReciveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 792775EA1D03138100B360F7 /* TKReciveCell.m */; };
 		799716581D016EDC006D6781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799716571D016EDC006D6781 /* main.m */; };
 		7997165B1D016EDC006D6781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7997165A1D016EDC006D6781 /* AppDelegate.m */; };
 		799716631D016EDC006D6781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799716621D016EDC006D6781 /* Assets.xcassets */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		792775E61D03136A00B360F7 /* TKSendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKSendCell.h; sourceTree = "<group>"; };
+		792775E71D03136A00B360F7 /* TKSendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKSendCell.m; sourceTree = "<group>"; };
+		792775E91D03138100B360F7 /* TKReciveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKReciveCell.h; sourceTree = "<group>"; };
+		792775EA1D03138100B360F7 /* TKReciveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKReciveCell.m; sourceTree = "<group>"; };
 		799716531D016EDC006D6781 /* EasyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799716571D016EDC006D6781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		799716591D016EDC006D6781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -333,6 +339,10 @@
 			children = (
 				79EC4DDB1D02BE2800C6A8DA /* TKSendMessageView.h */,
 				79EC4DDC1D02BE2900C6A8DA /* TKSendMessageView.m */,
+				792775E61D03136A00B360F7 /* TKSendCell.h */,
+				792775E71D03136A00B360F7 /* TKSendCell.m */,
+				792775E91D03138100B360F7 /* TKReciveCell.h */,
+				792775EA1D03138100B360F7 /* TKReciveCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792775E81D03136A00B360F7 /* TKSendCell.m in Sources */,
 				79EC4DE31D02BE2900C6A8DA /* TKConverseListController.m in Sources */,
 				79EC4DE81D02BE2900C6A8DA /* TKLoginViewController.m in Sources */,
 				79EC4DE51D02BE2900C6A8DA /* TKFriendListController.m in Sources */,
@@ -570,6 +581,7 @@
 				7997165B1D016EDC006D6781 /* AppDelegate.m in Sources */,
 				79EC4DEA1D02BE2900C6A8DA /* TKSendMessageView.m in Sources */,
 				79EC4DE91D02BE2900C6A8DA /* TKMainViewController.m in Sources */,
+				792775EB1D03138100B360F7 /* TKReciveCell.m in Sources */,
 				799716581D016EDC006D6781 /* main.m in Sources */,
 				79EC4DEB1D02BE2900C6A8DA /* TKRelasxedViewController.m in Sources */,
 				79EC4DE61D02BE2900C6A8DA /* TKBaseNavigationController.m in Sources */,

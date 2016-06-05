@@ -1,5 +1,5 @@
 //
-//  TKChatViewController.h
+//  TKReciveCell.h
 //  EasyChat
 //
 //  Created by wanghu on 16/6/4.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EMSDK.h"
 
-@interface TKChatViewController : UIViewController
-// 聊天对象
-@property (nonatomic, copy) NSString *buddy;
+@interface TKReciveCell : UITableViewCell
+
+@property (nonatomic, strong) EMMessage *message;
+
 @end
