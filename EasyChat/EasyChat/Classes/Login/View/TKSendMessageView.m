@@ -12,6 +12,8 @@
 @property (nonatomic, weak) UIButton *audio;
 // 图片选择按钮
 @property (nonatomic, weak) UIButton *selectImageBtn;
+// 按住说话
+@property (nonatomic, weak) UIButton *audioRecord;
 @end
 
 @implementation TKSendMessageView
@@ -75,6 +77,24 @@
         make.top.equalTo(self.mas_top).offset(5);
         make.bottom.equalTo(self.mas_bottom).offset(-5);
     }];
+    
+    // 添加按住说话按钮
+    UIButton *audioRecord = [[UIButton alloc] init];
+    [audioRecord setTitle:@"按住说话" forState:UIControlStateNormal];
+    [audioRecord setTitle:@"移除取消发送语音" forState:UIControlStateHighlighted];
+    [audioRecord setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [audioRecord setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    audioRecord.backgroundColor = [UIColor grayColor];
+    [audioRecord addTarget:self action:@selector(beginAudioRecord) forControlEvents:UIControlEventTouchDown];
+    [audioRecord addTarget:self action:@selector(endAudioRecord) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [self addSubview:audioRecord];
+    audioRecord.hidden = YES;
+    self.audioRecord = audioRecord;
+    [audioRecord mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.left.right.equalTo(textView);
+    }];
 }
 
 #pragma mark - UITextViewDelegate
@@ -82,15 +102,6 @@
 {
     [self.delegate sendMessageView:self allWord:textView];
 }
-
-//- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
-//{
-//    if ([text isEqualToString:@"\n"]) {
-//        [self.delegate sendMessageView:self putInWord:text allWord:textView];
-//        return NO;
-//    }
-//    return YES;
-//}
 
 // 选择图片点击
 - (void)selectImageBtnClick
@@ -105,8 +116,22 @@
 - (void)audioClick
 {
     self.audio.selected =!self.audio.isSelected;
-    if ([self.delegate respondsToSelector:@selector(sendMessageViewDidAudioRecord:)]) {
-        [self.delegate sendMessageViewDidAudioRecord:self];
+    self.audioRecord.hidden = !self.audio.isSelected;
+}
+
+// 开始录音
+- (void)beginAudioRecord
+{
+    if ([self.delegate respondsToSelector:@selector(sendMessageViewBeginAudioRecord:)]) {
+        [self.delegate sendMessageViewBeginAudioRecord:self];
+    }
+}
+
+// 结束录音
+- (void)endAudioRecord
+{
+    if ([self.delegate respondsToSelector:@selector(sendMessageViewEndAudioRecord:)]) {
+        [self.delegate sendMessageViewEndAudioRecord:self];
     }
 }
 

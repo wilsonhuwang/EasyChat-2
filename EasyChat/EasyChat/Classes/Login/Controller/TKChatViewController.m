@@ -10,6 +10,8 @@
 #import "TKSendMessageView.h"
 #import "TKReciveCell.h"
 #import "TKSendCell.h"
+#import "TKRecordTip.h"
+#import "TKRecordAudioTool.h"
 #import "EMSDK.h"
 
 @interface TKChatViewController () <UITableViewDelegate, UITableViewDataSource, TKSendMessageViewDelegate, EMChatManagerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -25,7 +27,10 @@
 @property (nonatomic, strong) TKSendCell *cellHeightTool;
 // 输入的文字消息
 @property (nonatomic, copy) NSString *messageText;
-
+// 语音发送提示按钮
+@property (nonatomic, strong) TKRecordTip *audioRecordTip;
+// 语音录制工具
+@property (nonatomic, strong) TKRecordAudioTool *audioTool;
 @end
 
 @implementation TKChatViewController
@@ -47,6 +52,20 @@ static NSString * const sendId = @"sendId";
         _cellHeightTool = [[TKSendCell alloc] init];
     }
     return _cellHeightTool;
+}
+
+- (TKRecordTip *)audioRecordTip
+{
+    if (!_audioRecordTip) {
+        _audioRecordTip = [[TKRecordTip alloc] init];
+        
+        [self.view addSubview:_audioRecordTip];
+        [_audioRecordTip mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.height.mas_equalTo(120);
+            make.center.equalTo(self.view);
+        }];
+    }
+    return _audioRecordTip;
 }
 
 - (void)viewDidLoad {
@@ -277,6 +296,28 @@ static NSString * const sendId = @"sendId";
     UIImage *thumbnailImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return thumbnailImage;
+}
+
+#pragma mark - 语音消息实现
+
+- (void)sendMessageViewBeginAudioRecord:(TKSendMessageView *)sendMessageView
+{
+    self.audioRecordTip.hidden = NO;
+    self.audioTool = [[TKRecordAudioTool alloc] init];
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"%05d", arc4random_uniform(10000)]];
+//    NSLog(@"%@", path);
+    [self.audioTool startRecordWithPath:path];
+}
+
+- (void)sendMessageViewEndAudioRecord:(TKSendMessageView *)sendMessageView
+{
+    self.audioRecordTip.hidden = YES;
+    [self.audioTool stopRecord];
+    
+    // 发送语音消息
+    EMVoiceMessageBody *body = [[EMVoiceMessageBody alloc] initWithLocalPath:self.audioTool.path displayName:@"audio"];
+    body.duration = self.audioTool.duration;
+    [self sendMessageWithBody:body];
 }
 
 // 发送聊天信息

@@ -13,13 +13,13 @@
 @required
 // 所有字符
 - (void)sendMessageView:(TKSendMessageView *)sendMessageView allWord:(UITextView *)textView;
-// 文字改变
-//- (void)sendMessageView:(TKSendMessageView *)sendMessageView putInWord:(NSString *)text allWord:(UITextView *)textView;
 @optional
 // 图片按钮点击
 - (void)sendMessageViewDidSelectImage:(TKSendMessageView *)sendMessageView;
-// 语音发送按钮点击
-- (void)sendMessageViewDidAudioRecord:(TKSendMessageView *)sendMessageView;
+// 开始录音
+- (void)sendMessageViewBeginAudioRecord:(TKSendMessageView *)sendMessageView;
+// 结束录音
+- (void)sendMessageViewEndAudioRecord:(TKSendMessageView *)sendMessageView;
 @end
 
 @interface TKSendMessageView : UIView
